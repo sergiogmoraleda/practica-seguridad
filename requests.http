@@ -1,0 +1,33 @@
+###
+POST http://localhost:3000/api/users HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "J",
+    "username": "f4",
+    "email": "aab.com",
+    "password": "123356",
+    "admin": false
+    
+}
+###
+GET http://localhost:3000/api/users/ HTTP/1.1
+
+###
+GET http://localhost:3000/api/users/62c81da2403b5404a5af727a HTTP/1.1
+
+###
+PUT http://localhost:3000/api/users/62c81da2403b5404a5af727a HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "Joe Doe",
+    "username": "joedoe24",
+    "email": "joedoe24@example.com"
+}
+
+### 
+DELETE http://localhost:3000/api/users/62c82dd8e39a26abc6046b73  HTTP/1.1
+
+
+
